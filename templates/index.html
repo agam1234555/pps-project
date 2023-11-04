@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Resume Builder</h1>
+    <form action="/result" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" name="address" required>
+
+        <label for="city_state_zip">City, State, ZIP:</label>
+        <input type="text" name="city_state_zip" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" name="phone" required>
+
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" required>
+
+        <label for="objective">Objective:</label>
+        <textarea name="objective" rows="4" required></textarea>
+
+        <label for="education">Education:</label>
+        <textarea name="education" rows="4" required></textarea>
+
+        <label for="work_experience">Work Experience:</label>
+        <textarea name="work_experience" rows="4" required></textarea>
+
+        <label for="volunteer_experience">Volunteer Experience:</label>
+        <textarea name="volunteer_experience" rows="4" required></textarea>
+
+        <label for="hobbies">Hobbies:</label>
+        <textarea name="hobbies" rows="4" required></textarea>
+
+        <label for="major">Major:</label>
+        <input type="text" name="major" required>
+
+        <label for="university">University:</label>
+        <input type="text" name="university" required>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" required>
+
+        <label for="course1">Course 1:</label>
+        <input type="text" name="course1">
+
+        <label for="course2">Course 2:</label>
+        <input type="text" name="course2">
+
+        <label for="course3">Course 3:</label>
+        <input type="text" name="course3">
+
+        <label for="course4">Course 4:</label>
+        <input type="text" name="course4">
+
+        <label for="course5">Course 5:</label>
+        <input type="text" name="course5">
+
+        <label for="skill1">Skill 1:</label>
+        <input type="text" name="skill1">
+
+        <label for="skill2">Skill 2:</label>
+        <input type="text" name="skill2">
+
+        <label for="skill3">Skill 3:</label>
+        <input type="text" name="skill3">
+
+        <label for="internship1">Internship 1:</label>
+        <input type="text" name="internship1">
+
+        <label for="internship2">Internship 2:</label>
+        <input type="text" name="internship2">
+
+        <label for="activity1">Extracurricular Activity 1:</label>
+        <input type="text" name="activity1">
+
+        <label for="activity2">Extracurricular Activity 2:</label>
+        <input type="text" name="activity2">
+
+        <label for="award1">Award 1:</label>
+        <input type="text" name="award1">
+
+        <label for="award2">Award 2:</label>
+        <input type="text" name="award2">
+
+        <label for="certification1">Certification 1:</label>
+        <input type="text" name="certification1">
+
+        <label for="certification2">Certification 2:</label>
+        <input type="text" name="certification2">
+
+        <label for="language1">Language 1:</label>
+        <input type="text" name="language1">
+
+        <label for="language2">Language 2:</label>
+        <input type="text" name="language2">
+        
+        <button type="submit">Generate Resume</button>
+    </form>
+</body>
+
+</html>

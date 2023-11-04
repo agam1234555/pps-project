@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generated Resume</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="resume-name">{{ name }}</h1>
+        <p class="resume-contact">{{ address }} | {{ city_state_zip }} | {{ phone }} | {{ email }}</p>
+
+        <h2 class="resume-section-heading">OBJECTIVE:</h2>
+        <p class="resume-content">{{ objective }}</p>
+
+        <h2 class="resume-section-heading">EDUCATION:</h2>
+        <p class="resume-content">
+            {{ education }}
+        </p>
+
+        <h2 class="resume-section-heading">WORK EXPERIENCE:</h2>
+        <p class="resume-content">
+            {{ work_experience }}
+        </p>
+
+        <h2 class="resume-section-heading">VOLUNTEER EXPERIENCE:</h2>
+        <p class="resume-content">
+            {{ volunteer_experience }}
+        </p>
+
+        <h2 class="resume-section-heading">HOBBIES:</h2>
+        <p class="resume-content">{{ hobbies }}</p>
+
+        <h2 class="resume-section-heading">MAJOR:</h2>
+        <p class="resume-content">{{ major }}</p>
+
+        <h2 class="resume-section-heading">UNIVERSITY:</h2>
+        <p class="resume-content">{{ university }}</p>
+
+        <h2 class="resume-section-heading">CITY:</h2>
+        <p class="resume-content">{{ city }}</p>
+
+        <h2 class="resume-section-heading">STATE:</h2>
+        <p class="resume-content">{{ state }}</p>
+
+        <h2 class="resume-section-heading">RELEVANT COURSEWORK:</h2>
+        <ul>
+            <li>{{ course1 }}</li>
+            <li>{{ course2 }}</li>
+            <li>{{ course3 }}</li>
+            <li>{{ course4 }}</li>
+            <li>{{ course5 }}</li>
+        </ul>
+
+        <h2 class="resume-section-heading">TECHNICAL SKILLS:</h2>
+        <ul>
+            <li>{{ skill1 }}</li>
+            <li>{{ skill2 }}</li>
+            <li>{{ skill3 }}</li>
+        </ul>
+
+        <h2 class="resume-section-heading">INTERNSHIPS:</h2>
+        <ul>
+            <li>{{ internship1 }}</li>
+            <li>{{ internship2 }}</li>
+        </ul>
+
+        <h2 class="resume-section-heading">EXTRACURRICULAR ACTIVITIES:</h2>
+        <ul>
+            <li>{{ activity1 }}</li>
+            <li>{{ activity2 }}</li>
+        </ul>
+
+        <h2 class="resume-section-heading">AWARDS AND ACHIEVEMENTS:</h2>
+        <ul>
+            <li>{{ award1 }}</li>
+            <li>{{ award2 }}</li>
+        </ul>
+
+        <h2 class="resume-section-heading">CERTIFICATIONS:</h2>
+        <ul>
+            <li>{{ certification1 }}</li>
+            <li>{{ certification2 }}</li>
+        </ul>
+
+        <h2 class="resume-section-heading">LANGUAGES:</h2>
+        <ul>
+            <li>{{ language1 }}</li>
+            <li>{{ language2 }}</li>
+        </ul>
+    </div>
+</body>
+
+</html>
